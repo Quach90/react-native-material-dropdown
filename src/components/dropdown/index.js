@@ -14,7 +14,6 @@ import {
 } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import { TextField } from 'react-native-material-textfield';
-import Appsee from "react-native-appsee"
 
 import DropdownItem from '../item';
 import styles from './styles';
@@ -557,7 +556,7 @@ export default class Dropdown extends PureComponent {
 
         return (
           <DropdownItem index={index} key={index} {...props}>
-            <Text style={[styles.item, itemTextStyle, style]} numberOfLines={1} ref={x => Appsee.markViewAsSensitive(x)}>
+            <Text style={[styles.item, itemTextStyle, style]} numberOfLines={1}>
               {title}
             </Text>
           </DropdownItem>
